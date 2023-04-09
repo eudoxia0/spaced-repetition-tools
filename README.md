@@ -20,10 +20,10 @@ Given a sequence, this script generates flashcards to remember that sequence. Th
 1. A **test card** that asks you to recall the entire sequence.
 1. A **cloze card** that asks you to fill one element of the sequence.
 1. For each element of the sequence:
-  1. A **forward card** that asks you to recall the element from its position.
-  1. A **backward card** that asks you to recall the position of a given element.
-  1. A **successor card** that asks you what comes after a specific element.
-  1. A **predecessor card** that asks you what comes before a specific element.
+   1. A **forward card** that asks you to recall the element from its position.
+   1. A **backward card** that asks you to recall the position of a given element.
+   1. A **successor card** that asks you what comes after a specific element.
+   1. A **predecessor card** that asks you what comes before a specific element.
 
 ### Usage
 
