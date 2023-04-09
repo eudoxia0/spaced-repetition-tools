@@ -48,7 +48,25 @@ Gamma
 
 This script will generate these flashcards:
 
+| Question                                                | Answer              |
+|---------------------------------------------------------|---------------------|
+| **Greek Alphabet:** Recall all elements of the sequence | Alpha, Beta, Gamma. |
+| **Greek Alphabet:** What element has position 1?        | Alpha.              |
+| **Greek Alphabet:** What element has position 2?        | Beta.               |
+| **Greek Alphabet:** What element has position 3?        | Gamma.              |
+| **Greek Alphabet:** What is the position of Alpha?      | 1.                  |
+| **Greek Alphabet:** What is the position of Beta?       | 2.                  |
+| **Greek Alphabet:** What is the position of Gamma?      | 3.                  |
+| **Greek Alphabet:** What comes after Alpha?             | Beta.               |
+| **Greek Alphabet:** What comes after Beta?              | Gamma.              |
+| **Greek Alphabet:** What comes before Beta?             | Alpha.              |
+| **Greek Alphabet:** What comes before Gamma?            | Beta.               |
 
+Plus the cloze card:
+
+| Cloze                                                                         |
+|-------------------------------------------------------------------------------|
+| **Greek Alphabet:** Elements of the sequence: {{Alpha}}, {{Beta}}, {{Gamma}}. |
 
 
 ## License
