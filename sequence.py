@@ -8,7 +8,7 @@ For example: if you give it a list of newline-separated names of US presidents i
 makes cards that ask questions like:
 
 1. What has position 1? George Washington.
-2. What position is George Washington? 2.
+2. What position is George Washington? 1.
 3. What comes before James Monroe? James Madison.
 4. What comes after James Monroe? John Quincy Adams.
 
@@ -25,12 +25,9 @@ Based on Gwern's:
 
 # Mochi Template
 
-# Example Usage
-
-```
-$ echo -e 'Greek Alphabet\nAlpha\nBeta\nGamma' | ./sequence.py
-Front,Back
-```
+You should import this into a deck with no template, since some of the cards
+have front/back sides and some of the cards have single side with cloze
+deletions.
 """
 import csv
 import sys
