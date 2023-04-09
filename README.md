@@ -68,6 +68,12 @@ Plus the cloze card:
 |-------------------------------------------------------------------------------|
 | **Greek Alphabet:** Elements of the sequence: {{Alpha}}, {{Beta}}, {{Gamma}}. |
 
+## Mochi Import
+
+1. Create a new deck (don't set a template).
+2. Click import, CSV, double quote as the quote character.
+3. Find the output file.
+4. Select the deck you just created.
 
 ## License
 
