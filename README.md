@@ -1,4 +1,4 @@
-# spaced-repetition-tools
+# spaced-repetition-tools ![](https://github.com/eudoxia0/spaced-repetition-tools/actions/workflows/test.yaml/badge.svg)
 
 This repository contains scripts for generating flashcards for import into [Mochi][mochi]. Most of these are based on [Gwern's scripts][gwern].
 
