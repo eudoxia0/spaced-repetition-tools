@@ -17,7 +17,7 @@ jobs:
 
       - name: Run script
         run: |
-          echo greek.txt | python ../sequence.py > output.csv
+          cat greek.txt | python ../sequence.py > output.csv
         working-directory: test
 
       - name: Compare output
