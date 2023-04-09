@@ -4,3 +4,9 @@ This repository contains scripts for generating flashcards for import into [Moch
 
 [mochi]: https://mochi.cards/
 [gwern]: https://gwern.net/spaced-repetition
+
+## License
+
+Copyright (c) 2023 [Fernando Borretti](https://borretti.me/).
+
+Released under the MIT license.
