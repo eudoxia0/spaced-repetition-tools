@@ -1,4 +1,4 @@
-# spaced-repetition-tools
+# spaced-repetition-tools ![](https://github.com/eudoxia0/spaced-repetition-tools/actions/workflows/test.yaml/badge.svg)
 
 This repository contains scripts for generating flashcards for import into [Mochi][mochi]. Most of these are based on [Gwern's scripts][gwern].
 
@@ -28,7 +28,7 @@ Given a sequence, this script generates flashcards to remember that sequence. Th
 ### Usage
 
 ```
-echo sequence.txt | ./sequence.py > output.csv
+cat sequence.txt | ./sequence.py > output.csv
 ```
 
 ### Format
@@ -68,6 +68,12 @@ Plus the cloze card:
 |-------------------------------------------------------------------------------|
 | **Greek Alphabet:** Elements of the sequence: {{Alpha}}, {{Beta}}, {{Gamma}}. |
 
+## Mochi Import
+
+1. Create a new deck (don't set a template).
+2. Click import, CSV, double quote as the quote character.
+3. Find the output file.
+4. Select the deck you just created.
 
 ## License
 

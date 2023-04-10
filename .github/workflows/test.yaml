@@ -1,4 +1,4 @@
-name: Build and test
+name: Test
 on:
   - push
 jobs:
@@ -22,5 +22,5 @@ jobs:
 
       - name: Compare output
         run: |
-          cmp --silent output.csv greek.txt || (echo "Files output.csv and greek.csv differ" && exit 1)
+          cmp --silent output.csv greek.csv || (echo "Files output.csv and greek.csv differ" && exit 1)
         working-directory: test
