@@ -1,34 +1,4 @@
 #!/usr/bin/env python
-"""
-# Overview
-
-A script to turn a list into flashcards.
-
-For example: if you give it a list of newline-separated names of US presidents it
-makes cards that ask questions like:
-
-1. What has position 1? George Washington.
-2. What position is George Washington? 1.
-3. What comes before James Monroe? James Madison.
-4. What comes after James Monroe? John Quincy Adams.
-
-Based on Gwern's:
-
-- https://www.gwern.net/haskell/mnemo4.hs
-- https://www.gwern.net/Spaced-repetition
-
-# Input Format
-
-- Reads from stdin
-- The first line is the name of the sequence.
-- The rest is a newline-separated list of strings.
-
-# Mochi Template
-
-You should import this into a deck with no template, since some of the cards
-have front/back sides and some of the cards have single side with cloze
-deletions.
-"""
 import csv
 import sys
 from dataclasses import dataclass
