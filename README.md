@@ -1,6 +1,7 @@
 # spaced-repetition-tools ![](https://github.com/eudoxia0/spaced-repetition-tools/actions/workflows/test.yaml/badge.svg)
 
-This repository contains scripts for generating flashcards for import into [Mochi][mochi]. Most of these are based on [Gwern's scripts][gwern].
+This repository contains scripts for generating flashcards for import into
+[Mochi][mochi]. Most of these are based on [Gwern's scripts][gwern].
 
 [mochi]: https://mochi.cards/
 [gwern]: https://gwern.net/spaced-repetition
@@ -9,7 +10,9 @@ This repository contains scripts for generating flashcards for import into [Moch
 
 All scripts read from stdin and write their output as a CSV to stdout.
 
-You will want to import these into a deck with no set template, since some of the flashcards have two-sides (question-answer) and some of them have one side (cloze deletions).
+You will want to import these into a deck with no set template, since some of
+the flashcards have two-sides (question-answer) and some of them have one side
+(cloze deletions).
 
 ## sequence.py
 
@@ -33,7 +36,8 @@ cat sequence.txt | ./sequence.py > output.csv
 
 ### Format
 
-The input is plain text. The first line is the title of the sequence, the subsequent lines are the elements.
+The input is plain text. The first line is the title of the sequence, the
+subsequent lines are the elements.
 
 ### Example
 
@@ -72,7 +76,8 @@ Plus the cloze card:
 
 ### Synopsis
 
-Given a poem, this script generates flashcards where you are given some context (the previous two lines) and have to recall the next line.
+Given a poem, this script generates flashcards where you are given some context
+(the previous two lines) and have to recall the next line.
 
 ### Usage
 
@@ -82,7 +87,8 @@ cat poem.txt | ./poetry.py > output.csv
 
 ### Format
 
-The input is plain text. The first line is the title of the sequence, the second line is the author, and subsequent lines are the poem.
+The input is plain text. The first line is the title of the sequence, the second
+line is the author, and subsequent lines are the poem.
 
 ### Example
 
