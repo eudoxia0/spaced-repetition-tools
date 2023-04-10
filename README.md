@@ -28,7 +28,7 @@ Given a sequence, this script generates flashcards to remember that sequence. Th
 ### Usage
 
 ```
-echo sequence.txt | ./sequence.py > output.csv
+cat sequence.txt | ./sequence.py > output.csv
 ```
 
 ### Format
