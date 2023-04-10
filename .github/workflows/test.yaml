@@ -15,12 +15,22 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Run script
+      - name: Run sequence.py
         run: |
           cat greek.txt | python ../sequence.py > output.csv
         working-directory: test
 
-      - name: Compare output
+      - name: Check sequence.py output
         run: |
           cmp --silent output.csv greek.csv || (echo "Files output.csv and greek.csv differ" && exit 1)
+        working-directory: test
+
+      - name: Run poetry.py
+        run: |
+          cat rilke.txt | python ../poetry.py > output.csv
+        working-directory: test
+
+      - name: Check poetry.py output
+        run: |
+          cmp --silent output.csv rilke.csv || (echo "Files output.csv and rilke.csv differ" && exit 1)
         working-directory: test
