@@ -68,6 +68,91 @@ Plus the cloze card:
 |-------------------------------------------------------------------------------|
 | **Greek Alphabet:** Elements of the sequence: {{Alpha}}, {{Beta}}, {{Gamma}}. |
 
+## poetry.py
+
+### Synopsis
+
+Given a poem, this script generates flashcards where you are given some context (the previous two lines) and have to recall the next line.
+
+### Usage
+
+```
+cat poem.txt | ./poetry.py > output.csv
+```
+
+### Format
+
+The input is plain text. The first line is the title of the sequence, the second line is the author, and subsequent lines are the poem.
+
+### Example
+
+Given a `wasteland.txt` file like this:
+
+```
+Archaic Torso of Apollo
+Rainer Maria Rilke
+We cannot know his legendary head
+with eyes like ripening fruit. And yet his torso
+is still suffused with brilliance from inside,
+like a lamp, in which his gaze, now turned to low,
+...
+```
+
+This script will generate these flashcards:
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <i>Beginning</i><br>
+        ...
+      </td>
+      <td>
+        We cannot know his legendary head
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <i>Beginning</i><br>
+        We cannot know his legendary head<br>
+        ...
+      </td>
+      <td>
+         with eyes like ripening fruit. And yet his torso
+      </td>
+    </tr>
+    <tr>
+      <td>
+        We cannot know his legendary head<br>
+        with eyes like ripening fruit. And yet his torso<br>
+        ...
+      </td>
+      <td>
+         is still suffused with brilliance from inside,
+      </td>
+    </tr>
+    <tr>
+      <td>
+        with eyes like ripening fruit. And yet his torso<br>
+         is still suffused with brilliance from inside,<br>
+        ...
+      </td>
+      <td>
+         like a lamp, in which his gaze, now turned to low,
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+And so on.
+
+
 ## Mochi Import
 
 1. Create a new deck (don't set a template).
