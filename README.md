@@ -166,6 +166,16 @@ And so on.
 3. Find the output file.
 4. Select the deck you just created.
 
+## Anki
+
+For anki the `poem_to_anki.py` script can be used in the same way.
+
+To import:
+1. Create a new deck
+2. Click Import File
+3. Select output file
+4. Choose semicolon as delimiter
+
 ## License
 
 Copyright (c) 2023 [Fernando Borretti](https://borretti.me/).
