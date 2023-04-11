@@ -11,11 +11,12 @@ def read_poem_from_stdin():
 def convert_poem_to_anki_flashcards(poem):
     flashcards = []
     title_and_author = f"{poem[0]} by {poem[1]}"
-    flashcards.append([f"Beginning of {title_and_author}", poem[2]])
+    flashcards.append([f"<i>Beginning</i>", poem[2]])
 
-    for i in range(3, len(poem)):
-        new_line = '\n\n'
-        flashcards.append([f"# {title_and_author} {new_line} {poem[i - 1]}", poem[i]])
+    flashcards.append([f"<i>Beginning</i><br>{poem[2]}", poem[3]])
+
+    for i in range(4, len(poem)):
+        flashcards.append([f"{poem[i - 2]}<br>{poem[i - 1]}", poem[i]])
 
     return flashcards
 
